@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+    node:
+        volumes:
+            - ./:/var/www/html:cached
+        environment:
+            - VIRTUAL_HOST=vue.test
+            - VIRTUAL_PORT=9000
+
+networks:
+    default:
+        name: nginx-proxy
+        external: true
