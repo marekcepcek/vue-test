@@ -130,6 +130,7 @@ export default defineComponent({
           -webkit-appearance: none;
           background-color: transparent;
           border: 0.2em solid #000;
+					border-radius: 3px;
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
             inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
           padding: 7px;
@@ -145,7 +146,7 @@ export default defineComponent({
         content: '';
         display: block;
         position: absolute;
-        top: 3px;
+        top: 4px;
         left: 7px;
         width: 4px;
         height: 8px;
