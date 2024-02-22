@@ -1,10 +1,17 @@
 <script setup lang="ts">
-import HelloWorld from "@/components/HelloWorld.vue";
+  import ProductList from './components/Products/ProductList.vue';
 </script>
 
 <template>
-  <hello-world message="Hello!"/>
+  <section class="filter__section">
+    <div class="wrapper">
+      <product-list />
+    </div>
+  </section>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+  .filter__section {
+    padding-block: 8rem;
+  }
 </style>
